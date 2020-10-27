@@ -1,0 +1,112 @@
+section.main1 {background-image: url(sliki/pozadina.jpg);
+    background-size: 100% 100%;
+    height: 700px;
+width: 100%;}
+
+    body{margin: 0px;
+        padding: 0px;
+background-color: hsl(172, 78%, 43%);
+font-family: 'Times New Roman', Times, serif;}
+
+h1.main{position: absolute;
+    top:7%;
+    left: 20%;
+    text-indent: 1em;
+}
+
+h2.main{position: absolute;
+    top: 20%;
+    left: 5%;
+    font-style: italic;
+    font-size: 40px;
+}
+
+h1.galerija{position: relative;
+margin-top: 50px;}
+aside{position: relative;
+margin-top: 50px;}
+
+h3,details{position: relative;
+margin-left: 10px;
+font-family: 'Times New Roman', Times, serif;}
+
+h2{position: relative;
+margin-left: 10px;
+margin-top: 70px;
+font-family: 'Times New Roman', Times, serif;}
+
+h1{font-size: 300%;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+margin-left: 10px;
+margin-top: 50px;}
+
+img.fudbal{position: relative;
+margin-left: 30px;}
+
+img.main{position: absolute;
+top: 40%;
+left: 8%;}
+
+ul.main{list-style: none;
+}
+
+nav {display: flex;
+    justify-content: center;
+align-items: center;
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 2px;
+position: fixed;
+width: 100%;
+box-sizing: border-box;
+padding: 10px 50px;
+z-index: 1;}
+
+.main{display: flex;}
+
+.main li a{padding: 10px 15px;}
+
+h2.poraka{position: absolute;
+top: 18%;
+left: 3%;
+font-size: 30px;
+font-family: 'Times New Roman', Times, serif;}
+
+table{width: 70%;
+height: 30%;}
+
+td{padding: 20px;}
+
+.kopce{position: relative;
+margin-top: 25px;
+margin-left: 27px;
+border-radius: 5px;
+width: 80px;
+height: 25px;
+background-color: lightgrey;
+font-weight: bold;}
+
+.input{position: relative;
+margin-left: 20px;
+margin-top: 7px;}
+
+.like:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+  }
+
+ .poraka{ border: 3px solid gray;
+    padding: 5px 20px;
+ background:  hsl(172, 78%, 43%);
+ width: 250px;
+  text-align: center;
+  border-radius: 60px;
+  position: absolute;
+  margin-left: 75%;
+  font-weight: bold;
+  font-size: 20px;
+ }
+
+ 
