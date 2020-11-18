@@ -32,7 +32,7 @@ font-family: 'Times New Roman', Times, serif;}
 
 h2{position: relative;
 margin-left: 10px;
-margin-top: 70px;
+
 font-family: 'Times New Roman', Times, serif;}
 
 h1{font-size: 300%;
@@ -76,7 +76,7 @@ font-family: 'Times New Roman', Times, serif;}
 table{width: 70%;
 height: 30%;}
 
-td{padding: 20px;}
+td{padding: 50px;}
 
 .kopce{position: relative;
 margin-top: 25px;
@@ -97,7 +97,7 @@ margin-top: 7px;}
     transform: scale(1.5); 
   }
 
- .poraka{ border: 3px solid gray;
+ .poraka{ border: 3px solid rgb(90, 90, 90);
     padding: 5px 20px;
  background:  hsl(172, 78%, 43%);
  width: 250px;
@@ -107,6 +107,45 @@ margin-top: 7px;}
   margin-left: 75%;
   font-weight: bold;
   font-size: 20px;
+ }
+
+ .popup1,.popup6,.popup2,.popup3,.popup4,.popup5{
+     background-color: rgba(0,0,0,0.6);
+     width: 100%;
+     height: 100%;
+    position: absolute;
+     display: none;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+    
+ }
+
+ .popup-1{
+     height: 250px;
+     width: 500px;
+     background:  #ffff;
+     padding: 20px;
+     border-radius: 5px;
+     position: absolute;
+ }
+
+ .close{
+     position: absolute;
+     top: -15px;
+     right: -15px;
+    height: 20px;
+    background: white;
+    width: 20px;
+    border-radius: 50%;
+ }
+
+ .blog{
+     background: lightgrey;
+     font-weight: bold;
+     border-radius: 10px;
+     text-align: center;
+     margin-top: 20px;
  }
 
  

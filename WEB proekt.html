@@ -8,6 +8,7 @@
             Bojan Risteski
         </title>    
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <script  src="jskript.js"></script>
     </head>
     <body>
         <section class="main1"id="home">
@@ -97,34 +98,154 @@
         </details>
 
         </section>
+        
 
         <section id="galerija">
-            <form method= "post" action="#">
+            <div class="popup1">
+                <div class="popup-1">
+                    <p>
+                        <textarea id="text1" placeholder="Напишете коментар " name="komentar" rows="8" cols="65" required></textarea>
+                    </p>
+                    <p>
+                        <input onclick="komentar(1,1),zatvori(1)" style="width: 100px;margin-left: 10px;" class="kopce" type="submit" value="Коментирај">
+                    </p>
+                    <input onclick="zatvori(1)" type="image" src="sliki/close.png" alt="close" class="close">
+                </div>
+            </div>
+            
+
+            <div class="popup2">
+                <div class="popup-1">
+                    <p>
+                        <textarea id="text2" placeholder="Напишете коментар " name="komentar" rows="8" cols="65" required></textarea>
+                    </p>
+                    <p>
+                        <input onclick="komentar(2,2),zatvori(2)" style="width: 100px;margin-left: 10px;" class="kopce" type="submit" value="Коментирај">
+                    </p>
+                    <input onclick="zatvori(2)" type="image" src="sliki/close.png" alt="close" class="close">
+                </div>
+            </div>
+
+            <div class="popup3">
+                <div class="popup-1">
+                    <p>
+                        <textarea id="text3" placeholder="Напишете коментар " name="komentar" rows="8" cols="65" required></textarea>
+                    </p>
+                    <p>
+                        <input onclick="komentar(3,3),zatvori(3)" style="width: 100px;margin-left: 10px;" class="kopce" type="submit" value="Коментирај">
+                    </p>
+                    <input onclick="zatvori(3)" type="image" src="sliki/close.png" alt="close" class="close">
+                </div>
+            </div>
+
+            <div class="popup4">
+                <div class="popup-1">
+                    <p>
+                        <textarea id="text4" placeholder="Напишете коментар " name="komentar" rows="8" cols="65" required></textarea>
+                    </p>
+                    <p>
+                        <input onclick="komentar(4,4),zatvori(4)" style="width: 100px;margin-left: 10px;" class="kopce" type="submit" value="Коментирај">
+                    </p>
+                    <input onclick="zatvori(4)" type="image" src="sliki/close.png" alt="close" class="close">
+                </div>
+            </div>
+
+            <div class="popup5">
+                <div class="popup-1">
+                    <p>
+                        <textarea id="text5" placeholder="Напишете коментар " name="komentar" rows="8" cols="65" required></textarea>
+                    </p>
+                    <p>
+                        <input onclick="komentar(5,5),zatvori(5)" style="width: 100px;margin-left: 10px;" class="kopce" type="submit" value="Коментирај">
+                    </p>
+                    <input onclick="zatvori(5)" type="image" src="sliki/close.png" alt="close" class="close">
+                </div>
+            </div>
+
+            <div class="popup6">
+                <div class="popup-1">
+                    <p>
+                        <textarea id="text6" placeholder="Напишете коментар " name="komentar" rows="8" cols="65" required></textarea>
+                    </p>
+                    <p>
+                        <input onclick="komentar(6,6),zatvori(6)" style="width: 100px;margin-left: 10px;" class="kopce" type="submit" value="Коментирај">
+                    </p>
+                    <input onclick="zatvori(6)" type="image" src="sliki/close.png" alt="close" class="close">
+                </div>
+            </div>
+            
             <h1 class="galerija"> Галерија</h1>
-        
-           
             <table>
                 <tr>
                     <td><a href="slikigalerija/slika1.jpg" target="blank"> <img src="slikigalerija/slika1.jpg" height="300px" width="300px" alt="#"></a><br>
-                        <input type="image" name="sl1" class="like" src="sliki/like.png" height="30px" width="30px" alt="#">
-                        <img class="like" src="sliki/comment.png" height="30px" width="30px" alt="#"></td>
+                        <input onclick="Broj(1)" type="image" name="sl1" class="like" src="sliki/like.png" height="30px" width="30px" alt="#">
+                        <input onclick="otvori(1,1)" type="image" class="like" src="sliki/comment.png" height="30px" width="30px" alt="#" >
+                   <p style="margin-left: 10px"> <label><strong>Likes:</strong> <span id="brlike1">0</span> 
+                   </label></p>
+                   <details>
+                    <summary><strong>Коментари</strong></summary>
+                    <div id="kom1">
+
+                    </div>
+                    </details></td>
+                  
                     <td><a href="slikigalerija/slika2.jpg" target="blank"> <img src="slikigalerija/slika2.jpg" height="300px" width="300px" alt="#"></a><br>
-                        <input type="image" name="sl2" class="like" src="sliki/like.png" height="30px" width="30px" alt="#">
-                        <img class="like" src="sliki/comment.png" height="30px" width="30px" alt="#"></td>
+                        <input onclick="Broj(2)" type="image" name="sl2" class="like" src="sliki/like.png" height="30px" width="30px" alt="#">
+                        <input onclick="otvori(2,2)" type="image" class="like" src="sliki/comment.png" height="30px" width="30px" alt="#">
+                        <p style="margin-left: 10px"> <label><strong>Likes:</strong> <span id="brlike2">0</span> 
+                        </label></p>
+                        <details>
+                         <summary><strong>Коментари</strong></summary>
+                        <div id="kom2">
+
+                        </div>
+                         </details></td>
                     <td><a href="slikigalerija/slika3.jpg" target="blank"> <img src="slikigalerija/slika3.jpg" height="300px" width="300px" alt="#"></a><br>
-                        <input type="image" name="sl3" class="like" src="sliki/like.png" height="30px" width="30px" alt="#">
-                        <img class="like" src="sliki/comment.png" height="30px" width="30px" alt="#"></td>
+                        <input onclick="Broj(3)" type="image" name="sl3" class="like" src="sliki/like.png" height="30px" width="30px" alt="#">
+                        <input onclick="otvori(3,3)" type="image" class="like" src="sliki/comment.png" height="30px" width="30px" alt="#">
+                        <p style="margin-left: 10px"> <label><strong>Likes:</strong> <span id="brlike3">0</span> 
+                        </label></p>
+                        <details>
+                         <summary><strong>Коментари</strong></summary>
+                         <div id="kom3">
+
+                        </div>
+                         </details></td>
                 </tr>
                 <tr>
                     <td> <a href="slikigalerija/slika4.jpg" target="blank"><img src="slikigalerija/slika4.jpg" height="300px" width="300px" alt="#"></a><br>
-                        <input type="image" name="sl4" class="like" src="sliki/like.png" height="30px" width="30px" alt="#">
-                        <img class="like" src="sliki/comment.png" height="30px" width="30px" alt="#"></td>
+                        <input onclick="Broj(4)" type="image" name="sl4" class="like" src="sliki/like.png" height="30px" width="30px" alt="#">
+                        <input onclick="otvori(4,4)" type="image" class="like" src="sliki/comment.png" height="30px" width="30px" alt="#">
+                        <p style="margin-left: 10px"> <label><strong>Likes:</strong> <span id="brlike4">0</span> 
+                        </label></p>
+                        <details>
+                         <summary><strong>Коментари</strong></summary>
+                         <div id="kom4">
+
+                        </div>
+                         </details></td>
                     <td> <a href="slikigalerija/slika5.jpg" target="blank"><img src="slikigalerija/slika5.jpg" height="300px" width="300px" alt="#"></a><br>
-                        <input type="image" name="sl5" class="like" src="sliki/like.png" height="30px" width="30px" alt="#">
-                        <img class="like" src="sliki/comment.png" height="30px" width="30px" alt="#"></td>
+                        <input onclick="Broj(5)" type="image" name="sl5" class="like" src="sliki/like.png" height="30px" width="30px" alt="#">
+                        <input onclick="otvori(5,5)" type="image" class="like" src="sliki/comment.png" height="30px" width="30px" alt="#">
+                        <p style="margin-left: 10px"> <label><strong>Likes:</strong> <span id="brlike5">0</span> 
+                        </label></p>
+                        <details>
+                         <summary><strong>Коментари</strong></summary>
+                         <div id="kom5">
+
+                        </div>
+                         </details></td>
                     <td><a href="slikigalerija/slika6.jpg" target="blank"> <img src="slikigalerija/slika6.jpg" height="300px" width="300px" alt="#"></a><br>
-                        <input type="image" name="sl6" class="like" src="sliki/like.png" height="30px" width="30px" alt="#">
-                        <img class="like" src="sliki/comment.png" height="30px" width="30px" alt="#"></td>
+                        <input onclick="Broj(6)" type="image" name="sl6" class="like" src="sliki/like.png" height="30px" width="30px" alt="#">
+                        <input onclick="otvori(6,6)" type="image" class="like" src="sliki/comment.png" height="30px" width="30px" alt="#">
+                        <p style="margin-left: 10px"> <label><strong>Likes:</strong> <span id="brlike6">0</span> 
+                        </label></p>
+                        <details>
+                         <summary><strong>Коментари</strong></summary>
+                         <div id="kom6">
+
+                        </div>
+                         </details></td>
                 </tr>
             </table>
         </form>
@@ -132,17 +253,27 @@
         </section>
 
         <section id="blog">
-            <form method= "post" action="#">
+            
             <h1>Блог</h1>
+            <p><label>
+                 <input id="tema" style="margin-left: 0px;width: 250px ;"class="input" type="text" placeholder="Тема">
+            </label>
+
+            </p>
             <p>
-                <textarea placeholder="Внесете текст " name="tema" rows="8" cols="160" required></textarea>
+                <textarea id="blogtxt" placeholder="Внесете текст " name="tema" rows="8" cols="160" required></textarea>
             </p>
             <p><label>Датум:
-                <input type="date" value="datum" required><br>
-                <input class="kopce" type="submit" value="испрати">
-                <input class ="kopce" type="reset" value="избриши">
+                <input id="datum" type="date" value="datum" required><br>
+                <input onclick="blog()" class="kopce" type="submit" value="испрати">
+                <input onclick="izbrisiBlog()" class ="kopce" type="reset" value="избриши">
             </label></p>
-        </form>
+
+        
+
+        <div id="blogtekst">
+
+        </div>
         </section>
 
         <section id="anketa">
@@ -169,10 +300,5 @@
             <a href="https://github.com/riziMizi"><img style="position:relative;margin-left: 50px;"src="sliki/github.png" height="50px" width="50px" alt="#"></a></p>
           <p style="position: relative; margin-left:10px;margin-top: 50px;font-size: 20px;">Можете да ме исконтактирате на следниов <a href="mailto:bojan_risteski@yahoo.com"> ЛИНК</a></p>
         </section>
-
-
-        
-        
-
     </body>
 </html>
